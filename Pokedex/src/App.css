@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.App {
+  background-color: red;
+  height: 100vh;
+  width: 100%;
+  min-width: 360px;
+
+}
+
+.container {
+  min-width: 111px;
+  min-height: 122px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 2em;
+  margin-bottom: 2em;
+  color: white;
+}
+
+header h1 {
+  font-size: xx-large;
+}
+
+header img {
+  margin-left: 2em;
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.pokemon {
+  position: relative;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.25em;
+  border-radius: 0.6em;
+  z-index: 0;
+}
+
+.list {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0.5em;
+  width: 95%;
+  margin: auto;
+  border-radius: 0.6em;
+}
+
+.pokeid {
+  width: 100%;
+  padding: 10px 10px;
+  text-align: right;
+}
+
+.name {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.bg {
+  position: absolute;
+  background-color: #E0E0E0;
+  height: 40%;
+  width: 100%;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 0.6em;
+}
+
+.pokemon img {
+  height: 25%;
+  width: 25%;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+}
+
+.input {
+  padding-bottom: 2em;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.buscador {
+  padding: 15px 15px 15px 35px;
+  border-radius: 2em;
+  margin-right: 1em;
+  width: 95%;
+  height: 3em;
+  border: none;
+}
+
+.input-icon {
+  color: grey;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 460px) {
+
+  .pokemon,
+  .name {
+    font-size: 0.9em;
+  }
+
+  .pokemon img {
+    height: 50%;
+    width: 50%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
